@@ -1,0 +1,68 @@
+File Loaction:
+--------------
+1. Unzip Files To C:\Program Files\obs-studio
+2. Make Sure The Full Location Is C:\Program Files\obs-studio\Wheel_Spinner
+
+
+
+Import Data To Streamer.bot:
+----------------------------
+Import Code:
+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
+
+
+Streamer.bot Setup:
+-------------------
+1. Enable WebSocket Server On Address: 127.0.0.1 Port: 8080
+
+
+
+
+
+
+Add Browser Source To OBS-Studio:
+---------------------------------
+1. Add Browser Source 
+Name: Wheel_Winner
+URL: file:///C:/Program%20Files/obs-studio/Wheel_Spinner/Wheel%20Winner/index.html?name=%winner%
+Width: 1920
+Height: 1080
+Check Shutdown source when not visible
+Check Refresh browser when scene becomes active
+
+2. Add Browser Source
+Name: Wheel
+Check Local file
+URL: C:\Program Files\obs-studio\Wheel_Spinner\index.html
+Width: 1920
+Height: 1080
+Check Shutdown source when not visible
+Check Refresh browser when scene becomes active
+
+
+
+
+
+Commands: 
+---------
+
+Add Something To Wheel:
+!addwheel NAME 
+
+Spin The Wheel:
+!spin
+
+Clear The Wheel:
+!clearwheel
+
+
+
+
+
+Not Working:
+-------------
+1. Open Streamer.bot And Right Click On 'Wheel Winner'
+2. Click On Copy Action ID
+3. Open script.js Into Notepad
+4. Look For The Following: const ACTION_ID = "6c00f131-30f5-4991-8e1a-eafdb5f497c8";
+5. Change The 6c00f131-30f5-4991-8e1a-eafdb5f497c8 With The Copied Action ID & Save File
