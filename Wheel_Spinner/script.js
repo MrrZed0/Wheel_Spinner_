@@ -1,32 +1,5 @@
 // default names
 const names = [
-  "nate1280",
-  "Lyfesaver74",
-  "Njna_Grimsdottir",
-  "Whipstickgostop",
-  "Krayn_",
-  "VRFlad",
-  "Geocym",
-  "FeVR",
-  "nate1280",
-  "Lyfesaver74",
-  "Njna_Grimsdottir",
-  "Whipstickgostop",
-  "Krayn_",
-  "VRFlad",
-  "Lyfesaver74",
-  "Njna_Grimsdottir",
-  "Whipstickgostop",
-  "Krayn_",
-  "VRFlad",
-  "Whipstickgostop",
-  "Krayn_",
-  "VRFlad",
-  "Lyfesaver74",
-  "Njna_Grimsdottir",
-  "Whipstickgostop",
-  "Krayn_",
-  "VRFlad"
 ];
 
 // Load names from names.txt
