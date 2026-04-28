@@ -1,7 +1,7 @@
 File Loaction:
 --------------
 1. Unzip Files To C:\Program Files\obs-studio
-2. Make Sure The Full Location Is C:\Program Files\obs-studio\Wheel Spinner
+2. Make Sure The Full Location Is C:\Program Files\obs-studio\Wheel_Spinner
 
 
 
