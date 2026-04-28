@@ -1,6 +1,3 @@
-# Wheel_Spinner_
-OBS-Studio Wheel Spinner Overlay That Works With Streamer.bot
-
 File Loaction:
 --------------
 1. Unzip Files To C:\Program Files\obs-studio
@@ -36,7 +33,8 @@ Check Refresh browser when scene becomes active
 
 2. Add Browser Source
 Name: Wheel
-URL: file:///C:/Program%20Files/obs-studio/Wheel%20Spinner/index.html
+Check Local file
+URL: C:\Program Files\obs-studio\Wheel_Spinner\index.html
 Width: 1920
 Height: 1080
 Check Shutdown source when not visible
