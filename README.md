@@ -1,70 +1,232 @@
 Preview: https://mrzed0.com/wp-content/uploads/Wheel_Spinner/overlay.html
 
-File Loaction:
---------------
-1. Unzip Files To C:\Program Files\obs-studio
-2. Make Sure The Full Location Is C:\Program Files\obs-studio\Wheel_Spinner
+========================================
+3D PERSISTENT STREAM WHEEL
+Setup & User Guide
+========================================
+
+OVERVIEW
+--------
+This system is a custom 3D Stream Wheel that runs using:
+- A Python backend server
+- OBS browser overlay
+- Streamer.bot automation
+- Optional Stream Deck controls
+
+The wheel automatically:
+- Loads entries from names.txt
+- Removes used results permanently (blacklist.conf)
+- Saves results between sessions
+
+
+========================================
+1. FILE STRUCTURE
+========================================
+
+All files MUST stay in the same folder:
+
+- overlay.html              (Wheel overlay)
+- admin.html                (Color settings panel)
+- server.py                 (Python backend server)
+- run.bat                   (Start server script)
+- python-3.14.4-amd64.exe   (Python installer)
+- names.txt                 (List of entries, one per line)
+- colors.conf               (Saved wheel colors)
+- blacklist.conf            (Removed/winning entries)
+- wheel_of_fortune_tick.mp3 (Spin sound effect)
+
+
+========================================
+2. INSTALLATION
+========================================
+
+STEP 1 — Install Python
+------------------------
+1. Run: python-3.14.4-amd64.exe
+2. IMPORTANT: Enable “Add Python to PATH”
+3. Finish installation
+
+
+STEP 2 — Start Server
+---------------------
+1. Run: run.bat
+2. Keep the black command window open
+3. Confirm message:
+   "Wheel Server running at http://localhost:8000"
+
+
+STEP 3 — Configure Colors
+-------------------------
+1. Open:
+   http://localhost:8000/admin.html
+2. Choose your wheel colors:
+   - Segments
+   - Border
+   - Text
+   - Center
+3. Click: SAVE COLORS.CONF
+4. Replace the file in your folder
+
+
+STEP 4 — Launch Wheel
+---------------------
+1. Open:
+   http://localhost:8000/overlay.html
+2. Wheel loads automatically:
+   - Reads names.txt
+   - Removes blacklist entries
+   - Spins after 2-second delay
+3. Result is saved to blacklist.conf
+
+
+========================================
+3. OBS STUDIO SETUP
+========================================
+
+1. Open OBS Studio
+2. Add Source → Browser
+3. Name: Wheel Spinner
+4. URL:
+   http://localhost:8000/overlay.html
+5. Set resolution:
+   800 x 800 (recommended)
+
+Optional:
+- Enable "Shutdown source when not visible"
+  (wheel resets when shown again)
+
+
+========================================
+4. MANAGING THE WHEEL
+========================================
+
+RESET WHEEL:
+- Open blacklist.conf
+- Delete all contents
+
+ADD NEW ENTRIES:
+- Edit names.txt
+- One entry per line
+
+AUTO BEHAVIOR:
+- Removed entries are never reused
+- Wheel updates dynamically
+- Colors remain consistent even after removals
+
+
+========================================
+5. STREAMER.BOT SETUP
+========================================
+
+IMPORT:
+Use the provided Streamer.bot import code to load all actions automatically.
+
+
+Import_Code:
+------------
+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
 
 
 
-Import Data To Streamer.bot:
-----------------------------
-Import Code:
-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
+
+ACTIONS INCLUDED
+-----------------
+
+1. Add_Item_To_Wheel
+   - Adds entry from chat/reward input
+   - Appends to names.txt
+
+2. Start_Wheel_Spinner_Server
+   - Starts Python backend server
+
+3. End_Wheel_Spinner_Server
+   - Stops Python server
+
+4. Show_Overlay_And_Spin
+   - Shows OBS overlay
+   - Spins wheel
+
+5. Hide_Overlay
+   - Hides OBS overlay
+
+6. Reset_Wheel
+   - Clears:
+     names.txt
+     blacklist.conf
 
 
-Streamer.bot Setup:
--------------------
-1. Enable WebSocket Server On Address: 127.0.0.1 Port: 8080
+========================================
+6. OBS INTEGRATION
+========================================
+
+Browser Source Setup:
+- Path:
+  C:\Program Files\obs-studio\Wheel_Spinner\overlay.html
+- Recommended size:
+  1920 x 1080
+- Enable:
+  "Refresh when scene becomes active"
 
 
+========================================
+7. STREAM DECK SETUP
+========================================
+
+INSTALL PLUGIN:
+1. Open Stream Deck software
+2. Go to Plugin Store
+3. Install "Streamer.bot"
+4. Set WebSocket:
+   ws://127.0.0.1:8080
 
 
+ENABLE IN STREAMER.BOT:
+Settings → WebSocket Server → Enable
 
 
-Add Browser Source To OBS-Studio:
----------------------------------
-1. Add Browser Source 
-Name: Wheel_Winner
-URL: file:///C:/Program%20Files/obs-studio/Wheel_Spinner/Wheel%20Winner/index.html?name=%winner%
-Width: 1920
-Height: 1080
-Check Shutdown source when not visible
-Check Refresh browser when scene becomes active
+BUTTONS
+-------
 
-2. Add Browser Source
-Name: Wheel
-Check Local file
-URL: C:\Program Files\obs-studio\Wheel_Spinner\index.html
-Width: 1920
-Height: 1080
-Check Shutdown source when not visible
-Check Refresh browser when scene becomes active
+SPIN BUTTON
+- Action: Show_Overlay_And_Spin
+
+HIDE BUTTON
+- Action: Hide_Overlay
+
+OPTIONAL:
+- Add Item → Add_Item_To_Wheel
+- Reset → Reset_Wheel
 
 
+========================================
+8. HOW IT WORKS
+========================================
+
+1. Viewer adds item (command/reward)
+2. Item saved to names.txt
+3. Python server manages data
+4. OBS displays wheel
+5. Streamer.bot triggers spin
+6. Winner is saved permanently in blacklist
 
 
+========================================
+9. TROUBLESHOOTING
+========================================
 
-Commands: 
----------
+- Server not starting:
+  → Ensure Python is installed + PATH enabled
 
-Add Something To Wheel:
-!addwheel NAME 
+- Wheel not updating:
+  → Refresh OBS browser source
 
-Spin The Wheel:
-!spin
+- Stream Deck not working:
+  → Check WebSocket connection (8080)
 
-Clear The Wheel:
-!clearwheel
-
-
+- Permissions issues:
+  → Run Streamer.bot as Administrator
 
 
-
-Not Working:
--------------
-1. Open Streamer.bot And Right Click On 'Wheel Winner'
-2. Click On Copy Action ID
-3. Open script.js Into Notepad
-4. Look For The Following: const ACTION_ID = "6c00f131-30f5-4991-8e1a-eafdb5f497c8";
-5. Change The 6c00f131-30f5-4991-8e1a-eafdb5f497c8 With The Copied Action ID & Save File
+========================================
+END OF GUIDE
+========================================
