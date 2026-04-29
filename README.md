@@ -1,3 +1,5 @@
+Preview: https://mrzed0.com/wp-content/uploads/Wheel_Spinner/overlay.html
+
 File Loaction:
 --------------
 1. Unzip Files To C:\Program Files\obs-studio
